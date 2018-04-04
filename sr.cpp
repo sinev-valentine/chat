@@ -138,7 +138,6 @@ int main()
                     exit(EXIT_FAILURE);
                 }
                	cl_list.push_back(client);
-                //send(client, ask_room, (int) sizeof(ask_room), 0);
                 if (sendall(client, your_room.c_str(), (int) your_room.length()+1, 0) == -1)
                     close_client( client);
             }
